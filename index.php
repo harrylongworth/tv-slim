@@ -31,6 +31,7 @@ $app = new \Slim\Slim();
  */
 
 // GET route
+/*
 $app->get(
     '/',
     function () {
@@ -130,8 +131,9 @@ EOT;
         echo $template;
     }
 );
+*/
 
-$app->get('/hello/:name', function ($name) {
+$app->get('/:name', function ($name) {
     echo "Hello, " . $name;
 });
 
