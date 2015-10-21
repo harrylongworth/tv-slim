@@ -131,10 +131,6 @@ EOT;
     }
 );
 
-$app->get('/hello/:name', function ($name) {
-    echo "Hello, " . $name;
-});
-
 // POST route
 $app->post(
     '/post',
